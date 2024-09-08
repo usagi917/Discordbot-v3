@@ -6,6 +6,7 @@ Pythonで構築されたDiscordボットで、Dify APIを使ったbotです
 
 - メッセージの自動応答
 - APIとの連携機能
+- Discordで発信した方の名前を呼んでくれます
 
 ## 必要条件
 
