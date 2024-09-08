@@ -54,8 +54,9 @@ async def on_message(message):
     # ユーザーのメッセージをDify APIに転送して応答を取得
     response = send_to_dify(message.content)
 
-    # 応答をDiscordに送信
-    await message.channel.send(response)
+    # 応答にユーザー名を追加して送信
+    reply = f"{message.author.name}さん、{response}"
+    await message.channel.send(reply)
 
 # Discordボットの起動
 client.run(DISCORD_TOKEN)
